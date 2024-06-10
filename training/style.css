@@ -1,0 +1,96 @@
+.about-images-container{
+   display: grid;
+   height: 500px;
+   width: 70%;
+   margin: 0 auto;
+   grid-template-columns: repeat(8, 1fr);
+   column-gap: 1vw;
+
+   border-radius: 20px;
+}
+
+.about-images-container div{
+   display: block;
+   background-color: red;
+
+   width: 100%;
+   height: 100%;
+
+   /* height: 100%;
+   object-fit: cover;
+   object-position: left; */
+   border-radius: 9px;
+
+   transition: background-color 0.3s ease;
+}
+
+#first-img{
+   background-color: blue;
+   grid-column: 1/6;
+}
+
+#second-img{
+   background-color: azure;
+   grid-column: 6/7;
+}
+
+#third-img{
+   background-color: black;
+   grid-column: 7/8;
+}
+
+#fourth-img{
+   background-color: rgb(72, 72, 98);
+   grid-column: 8/9;
+}
+
+
+#first-img:hover{
+   transition-duration: 400ms;
+}
+
+#first-img:hover ~ #second-img{
+   background-color: black;
+}
+
+#first-img:hover ~ #third-img{
+   background-color: black;
+}
+
+#first-img:hover ~ #fourth-img{
+   background-color: black;
+}
+
+#second-img:hover{
+   /* grid-column: 2/7;
+   grid-row: 1/2; */
+
+   background-color: red;
+}
+
+#second-img:hover ~ #first-img{
+   background-color: red;
+}
+
+#second-img:hover ~ #third-img{
+   background-color: red;
+}
+
+#second-img:hover ~ #fourth-img{
+   background-color: red;
+}
+
+
+/* 
+#second-img:hover ~ #first-img{
+   background-color: red;
+   transition-duration: 400ms;
+   grid-column: 1/2;
+}
+ */
+
+/* 
+.about-images-container:hover:has(div:hover){
+   width: 60%;
+   transition-duration: 100ms;
+} */
