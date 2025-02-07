@@ -12,7 +12,7 @@ html{
 }
 
 body {
-    background-color: black;
+    background-color: rgb(15, 15, 15);
     background-repeat: no-repeat;
     color: white;
     font-family: "League Spartan", sans-serif;  
@@ -39,11 +39,12 @@ a {
 .nav-bar {
 
     background-color: rgb(0, 0, 0);
+    background-color: transparent;
     border-bottom: 2px solid rgb(158, 38, 250);
 
 
 
-    height: 4.5vw;
+    height: 7vh;
 
     font-weight: bold;
 
@@ -65,7 +66,7 @@ a {
     top: 0.5vw;
     left: 2vw;
 
-    font-size: 2vw;
+    font-size: 3vh;
     color: rgb(158, 38, 250);
 }
 
@@ -182,9 +183,15 @@ a {
 
 
 /* LANDING PAGE */
+
+#LANDINGPAGE{
+    text-align: center;
+    justify-content: center;
+}
+
 .info{
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 7vh;
     width:100%;
     white-space: nowrap;
 }
@@ -193,7 +200,31 @@ a {
     font-size: 13vw;
     color: rgb(158, 38, 250);
     padding-bottom: 3.5vw;
+    text-align: center;
+
 }
+
+.landing-page-content{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.landing-page-photo{
+}
+
+.landing-page-photo img{
+    width: 27vw;
+    height: 27vw;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.landing-page-text{
+    margin: 4vh 0;
+}
+
+
 
 .landing-page-subtitles{
     text-align: center;
@@ -209,6 +240,17 @@ a {
     font-size: 2.7vw;
     color: rgb(158, 38, 250);
 }
+
+
+.landing-page-subtitles:last-child {
+    margin-bottom: 0vh;
+}
+
+#landing-carrer-subtitle{
+    margin-bottom: 0vh;
+}
+
+
 
 .landing-page-transition{
     margin-top: 8vh;
@@ -231,7 +273,7 @@ a {
     justify-content: center;
     position: relative;
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
     width: 100%;
 }
